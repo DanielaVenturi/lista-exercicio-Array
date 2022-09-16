@@ -14,12 +14,26 @@
 
     let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
 
-    // let carrosHatch = ["308", "Focus", "i30"];
+ let carrosHatch = ["308", "Focus", "i30"];
 
-const carroUm = 
+ const carroUm = prompt(`indique um carro`);
+const carroUmTipo = prompt(`qual tipo de veiculo ele é? SUV, Sedan ou Hatch.`);
+
+const carroDois = prompt(`indique um segundo carro`);
+const carroDoisTipo = prompt(`qual tipo de veiculo ele é? SUV, Sedan ou Hatch.`);
+
+const carroTres = prompt(`indique  terceiro carro`);
+const carroTresTipo = prompt(`qual tipo de veiculo ele é? SUV, Sedan ou Hatch.`);
+ 
     //PROCESSAMENTO
+
+(carroUmTipo === "SUV") ? carrosSUV.push(carroUm) : (carroUmTipo === "Sedan") ? cassosSedan.push(carroUm) : carrosHatch.push(carroUm);
+(carroDoisTipo === "SUV") ? carrosSUV.push(carroDois) : (carroDoisTipo === "Sedan") ? cassosSedan.push(carroDois) : carrosHatch.push(carroDois);
+(carroTresTipo === "SUV") ? carrosSUV.push(carroTres) : (carroTresTipo === "Sedan") ? cassosSedan.push(carroTres) : carrosHatch.push(carroTres);
 
 
     //SAÍDA
+
+document.write(`As listas finais ficaram <br>SUV: ${carrosSUV} <br>Sedan: ${cassosSedan} <br>Hatch: ${carrosHatch} `);
 
 </script>
