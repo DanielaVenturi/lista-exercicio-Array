@@ -7,15 +7,17 @@
 
     //ENTRADA
 
-const palavra = prompt(`Digite UMA palavra`)
-const letra = prompt(`informe a letra que deseja encontrar na palavra que acabou de digitar.`)
+const palavra = prompt(`Digite UMA palavra`).trim();
+const letra = prompt(`informe a letra que deseja encontrar na palavra que acabou de digitar.`).trim();
 
     //PROCESSAMENTO
 
-const posicaoLetra = palavra.indexOf(letra)
+const posicaoLetra = palavra.indexOf(letra);
 
-if () {
-    
+if (posicaoLetra >= 0) {
+    document.write(`a letra digitada esta na posicao ${posicaoLetra + 1}`)
+}else {
+    document.write(`A letra nao foi encontrada`)
 }
 
 
